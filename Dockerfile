@@ -16,12 +16,12 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # 5. Copy the rest of the application code into the container at /app
 COPY main.py .
 COPY schema.py .
-COPY cab_management.db .
+COPY data.db .
 
 # 6. Make port 8000 available to the world outside this container
-EXPOSE 8000
+EXPOSE 8080
 
 # 7. Define the command to run your app using uvicorn
 #    --host 0.0.0.0 makes the server accessible from outside the container
 #    main:app tells uvicorn where to find the FastAPI app instance
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
