@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # 5. Copy the rest of the application code into the container at /app
 COPY main.py .
 COPY schema.py .
-COPY cab_management.db .
+COPY data.db .
 
 # 6. Make port 8000 available to the world outside this container
 EXPOSE 8000
