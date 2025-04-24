@@ -12,7 +12,7 @@ from sqlalchemy.orm import Session, sessionmaker
 
 # --- Configuration ---
 # !! Important: Use environment variables for sensitive data in production !!
-SECRET_KEY = "your-strong-secret-key-here"  # CHANGE THIS! Keep it secret.
+SECRET_KEY = "12345678"  # CHANGE THIS! Keep it secret.
 ALGORITHM = "HS256"  # PyJWT supports HS256
 ACCESS_TOKEN_EXPIRE_MINUTES = 30  # Token validity period
 
